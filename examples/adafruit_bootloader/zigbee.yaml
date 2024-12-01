@@ -6,3 +6,22 @@ board:
   # adafruit_nrf52_sd130
   bootloader: adafruit_nrf52_sd140_v7
   # bootloader: adafruit_nrf52_sd140_v6
+
+  debug:
+    enabled: false
+    console: usb
+    leds:
+      enabled: true
+      power: ledpow
+      connection: ledcon
+  leds:
+    - id: ledpow
+      pin: 0.30
+    - id: ledcon
+      pin: 0.26
+    # - id: light1
+      # pin: 0.06
+
+sensors:
+  - type: on_off
+    pin: 0.06
